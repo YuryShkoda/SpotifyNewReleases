@@ -28,7 +28,20 @@
 		0450D31A1F213B94003A4F23 /* SpotifyTracksFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D3191F213B94003A4F23 /* SpotifyTracksFetcher.swift */; };
 		0450D31C1F213C0A003A4F23 /* SpotifyTracksParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D31B1F213C0A003A4F23 /* SpotifyTracksParser.swift */; };
 		0450D31E1F213D0C003A4F23 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450D31D1F213D0C003A4F23 /* TrackCell.swift */; };
+		D216AC391F250FD200D92465 /* SpotifyNewReleasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216AC381F250FD200D92465 /* SpotifyNewReleasesTests.swift */; };
+		D216AC421F251F1A00D92465 /* jsontracktest1.json in Resources */ = {isa = PBXBuildFile; fileRef = D216AC401F251F1A00D92465 /* jsontracktest1.json */; };
+		D216AC431F251F1A00D92465 /* jsontracktest2.json in Resources */ = {isa = PBXBuildFile; fileRef = D216AC411F251F1A00D92465 /* jsontracktest2.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D216AC3B1F250FD200D92465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044E4FA11F1FFB8500AF75D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044E4FA81F1FFB8500AF75D1;
+			remoteInfo = SpotifyNewReleases;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		044E4FA91F1FFB8500AF75D1 /* SpotifyNewReleases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyNewReleases.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +68,11 @@
 		0450D3191F213B94003A4F23 /* SpotifyTracksFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpotifyTracksFetcher.swift; path = SpotifyNewReleases/SpotifyTracksFetcher.swift; sourceTree = "<group>"; };
 		0450D31B1F213C0A003A4F23 /* SpotifyTracksParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpotifyTracksParser.swift; path = SpotifyNewReleases/SpotifyTracksParser.swift; sourceTree = "<group>"; };
 		0450D31D1F213D0C003A4F23 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackCell.swift; path = SpotifyNewReleases/TrackCell.swift; sourceTree = "<group>"; };
+		D216AC361F250FD200D92465 /* SpotifyNewReleasesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyNewReleasesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D216AC381F250FD200D92465 /* SpotifyNewReleasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNewReleasesTests.swift; sourceTree = "<group>"; };
+		D216AC3A1F250FD200D92465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D216AC401F251F1A00D92465 /* jsontracktest1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsontracktest1.json; sourceTree = "<group>"; };
+		D216AC411F251F1A00D92465 /* jsontracktest2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsontracktest2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,13 @@
 				044E4FC21F1FFD0700AF75D1 /* SpotifyAudioPlayback.framework in Frameworks */,
 				044E4FC41F1FFD0700AF75D1 /* SpotifyMetadata.framework in Frameworks */,
 				044E4FC31F1FFD0700AF75D1 /* SpotifyAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D216AC331F250FD200D92465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +120,7 @@
 			children = (
 				044468171F224EC400A40D4F /* SpotifyLogic */,
 				044E4FAB1F1FFB8500AF75D1 /* SpotifyNewReleases */,
+				D216AC371F250FD200D92465 /* SpotifyNewReleasesTests */,
 				044E4FBE1F1FFCF200AF75D1 /* Frameworks */,
 				044E4FAA1F1FFB8500AF75D1 /* Products */,
 			);
@@ -104,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				044E4FA91F1FFB8500AF75D1 /* SpotifyNewReleases.app */,
+				D216AC361F250FD200D92465 /* SpotifyNewReleasesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +160,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D216AC371F250FD200D92465 /* SpotifyNewReleasesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D216AC381F250FD200D92465 /* SpotifyNewReleasesTests.swift */,
+				D216AC3A1F250FD200D92465 /* Info.plist */,
+				D216AC401F251F1A00D92465 /* jsontracktest1.json */,
+				D216AC411F251F1A00D92465 /* jsontracktest2.json */,
+			);
+			path = SpotifyNewReleasesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,13 +191,31 @@
 			productReference = 044E4FA91F1FFB8500AF75D1 /* SpotifyNewReleases.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D216AC351F250FD200D92465 /* SpotifyNewReleasesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D216AC3F1F250FD200D92465 /* Build configuration list for PBXNativeTarget "SpotifyNewReleasesTests" */;
+			buildPhases = (
+				D216AC321F250FD200D92465 /* Sources */,
+				D216AC331F250FD200D92465 /* Frameworks */,
+				D216AC341F250FD200D92465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D216AC3C1F250FD200D92465 /* PBXTargetDependency */,
+			);
+			name = SpotifyNewReleasesTests;
+			productName = SpotifyNewReleasesTests;
+			productReference = D216AC361F250FD200D92465 /* SpotifyNewReleasesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		044E4FA11F1FFB8500AF75D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Yurec;
 				TargetAttributes = {
@@ -168,6 +224,12 @@
 						DevelopmentTeam = F524X8MS5B;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+					};
+					D216AC351F250FD200D92465 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F524X8MS5B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 044E4FA81F1FFB8500AF75D1;
 					};
 				};
 			};
@@ -185,6 +247,7 @@
 			projectRoot = "";
 			targets = (
 				044E4FA81F1FFB8500AF75D1 /* SpotifyNewReleases */,
+				D216AC351F250FD200D92465 /* SpotifyNewReleasesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +260,15 @@
 				044E4FB71F1FFB8500AF75D1 /* LaunchScreen.storyboard in Resources */,
 				044E4FB41F1FFB8500AF75D1 /* Assets.xcassets in Resources */,
 				044E4FB21F1FFB8500AF75D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D216AC341F250FD200D92465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D216AC431F251F1A00D92465 /* jsontracktest2.json in Resources */,
+				D216AC421F251F1A00D92465 /* jsontracktest1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +297,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D216AC321F250FD200D92465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D216AC391F250FD200D92465 /* SpotifyNewReleasesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D216AC3C1F250FD200D92465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044E4FA81F1FFB8500AF75D1 /* SpotifyNewReleases */;
+			targetProxy = D216AC3B1F250FD200D92465 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		044E4FB01F1FFB8500AF75D1 /* Main.storyboard */ = {
@@ -379,6 +467,38 @@
 			};
 			name = Release;
 		};
+		D216AC3D1F250FD200D92465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = F524X8MS5B;
+				INFOPLIST_FILE = SpotifyNewReleasesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yurec.SpotifyNewReleasesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotifyNewReleases.app/SpotifyNewReleases";
+			};
+			name = Debug;
+		};
+		D216AC3E1F250FD200D92465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = F524X8MS5B;
+				INFOPLIST_FILE = SpotifyNewReleasesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yurec.SpotifyNewReleasesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotifyNewReleases.app/SpotifyNewReleases";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +519,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D216AC3F1F250FD200D92465 /* Build configuration list for PBXNativeTarget "SpotifyNewReleasesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D216AC3D1F250FD200D92465 /* Debug */,
+				D216AC3E1F250FD200D92465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
